@@ -24,7 +24,8 @@ Run and test the app using a browser or Postman:
 Secure endpoints will prompt for username and password.
 
 ## PROGRAM CODE:
-###pom.xml (Dependencies)
+### pom.xml (Dependencies)
+```xml
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -35,7 +36,9 @@ Secure endpoints will prompt for username and password.
         <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
 </dependencies>
+```
 ### SecurityConfig.java (Spring Boot 3.x / Spring Security 6+)
+```java
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -60,7 +63,9 @@ public class SecurityConfig {
         return new InMemoryUserDetailsManager(user);
     }
 }
-###HelloController.java
+```
+### HelloController.java
+```java
 @RestController
 public class HelloController {
 
@@ -74,3 +79,4 @@ public class HelloController {
         return "This is a secured endpoint. You are authenticated!";
     }
 }
+```
