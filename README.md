@@ -80,3 +80,8 @@ public class HelloController {
     }
 }
 ```
+### Output 
+#### Without Authentication (localhost:8080/public)
+<img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/e6a127fd-1c4e-4be0-bbef-5be066b2d68c" />
+#### With Authentication (localhost:8080/private)
+<img width="1912" height="963" alt="image" src="https://github.com/user-attachments/assets/b0fea5b2-cf15-4db6-a56c-6129772ae6ee" />
